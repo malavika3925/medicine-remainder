@@ -1,0 +1,64 @@
+.add-page {
+  background: #f0fdf4;
+  min-height: 100dvh;
+  padding-bottom: 90px;
+}
+
+.add-form {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.time-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.time-chip {
+  padding: 0.75rem 0.5rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  background: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.time-chip.selected {
+  background: #d8f3dc;
+  border-color: #40916c;
+  color: #2d6a4f;
+}
+
+.custom-time-row {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.custom-time-row input[type="time"] {
+  flex: 1;
+  padding: 0.75rem;
+  border: 2px solid #e5e7eb;
+  border-radius: 12px;
+  font-size: 1rem;
+}
+
+.selected-times {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: #40916c;
+  font-weight: 500;
+}
+
+@media (max-width: 360px) {
+  .time-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
